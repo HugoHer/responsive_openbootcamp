@@ -3,42 +3,33 @@
   padding: 0;
 }
 
-.container{
-  background-color: blue;
+body{
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
-  flex-direction: column;
-  flex-grow: 0;
-  
+  font-size: 2rem;
 }
 
-.principal{
+div.container{
+  background-color: #f54949;
+  color: white;
   display: flex;
   flex-direction: column;
-  background-color: bisque;
-  width: 10rem;
-  height: 10rem;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
+  gap: 10px;
 }
 
 .derecha{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: brown;
-  width: 10rem;
-  height: 10rem;
-  align-self: flex-end;
+  flex-grow: 1;
+  gap: 10px;
 }
 
 @media (max-width : 640px) {
-  .principal{
-    display: flex;
-    flex-direction:row;
-    background-color: bisque;
-    width: 10rem;
-    height: 10rem;
-    justify-content: flex-end;
-    align-items: center;
-  }
+  body {
+    flex-direction: column-reverse;
+}
+div.container{
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 }
