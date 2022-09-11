@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  
+}
+
+.principal{
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  width: 10rem;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.derecha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  width: 10rem;
+  height: 10rem;
+  align-self: flex-end;
+}
+
+@media (max-width : 640px) {
+  .principal{
+    display: flex;
+    flex-direction:row;
+    background-color: bisque;
+    width: 10rem;
+    height: 10rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
